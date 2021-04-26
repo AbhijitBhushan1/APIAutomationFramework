@@ -1,11 +1,9 @@
 /Users/abhijit/Documents/gatling/HttpclientFramewokPractic/src/main/java/Users/UsersMethodAction.java
 /Users/abhijit/Documents/gatling/HttpclientFramewokPractic/src/main/java/Users/UserDto.java
 /Users/abhijit/Documents/gatling/HttpclientFramewokPractic/src/main/java/Utils/UniversalHeader.java
-/Users/abhijit/Documents/gatling/HttpclientFramewokPractic/src/main/java/Users/LotteDto.java
-/Users/abhijit/Documents/gatling/HttpclientFramewokPractic/src/main/java/Users/Config.java
 /Users/abhijit/Documents/gatling/HttpclientFramewokPractic/src/main/java/Utils/Response.java
 /Users/abhijit/Documents/gatling/HttpclientFramewokPractic/src/main/java/Utils/CommonClass.java
+/Users/abhijit/Documents/gatling/HttpclientFramewokPractic/src/main/java/Utils/Logger.java
 /Users/abhijit/Documents/gatling/HttpclientFramewokPractic/src/main/java/Users/Endpoints.java
-/Users/abhijit/Documents/gatling/HttpclientFramewokPractic/src/main/java/Users/Source.java
 /Users/abhijit/Documents/gatling/HttpclientFramewokPractic/src/main/java/Utils/BaseAPI.java
 /Users/abhijit/Documents/gatling/HttpclientFramewokPractic/src/main/java/Enviornments/BaseUrls.java
