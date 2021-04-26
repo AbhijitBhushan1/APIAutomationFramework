@@ -1,0 +1,25 @@
+package TestClass;
+
+import Users.UsersMethodAction;
+import Utils.CommonClass;
+import Utils.Response;
+import Utils.UniversalHeader;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.testng.annotations.Test;
+import org.json.*;
+import org.testng.asserts.SoftAssert;
+
+public class usersTest extends CommonClass {
+    @Test(dataProvider="userData",dataProviderClass=UsersDataprovider.class)
+    public void postData(LotteDto lotteDto) throws Exception {
+        ObjectMapper objectMapper=new ObjectMapper();
+        String payload= objectMapper.writeValueAsString(lotteDto);
+        Response response= UsersMethodAction.PostUser(UniversalHeader.getHeader(),payload);
+        SoftAssert softAssert=new SoftAssert();
+        JSONObject jsonObject2=new JSONObject(response.getBody());
+        Integer code=jsonObject2.getInt("code");
+        System.out.println(code);
+        softAssert.assertEquals(response.getStatusCode().intValue(),200,"failed");
+        softAssert.assertAll();
+    }
+}
