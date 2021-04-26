@@ -1,5 +1,6 @@
 package TestClass;
 
+import Users.UserDto;
 import Users.UsersMethodAction;
 import Utils.CommonClass;
 import Utils.Response;
@@ -11,9 +12,9 @@ import org.testng.asserts.SoftAssert;
 
 public class usersTest extends CommonClass {
     @Test(dataProvider="userData",dataProviderClass=UsersDataprovider.class)
-    public void postData(LotteDto lotteDto) throws Exception {
+    public void postData(UserDto userDto) throws Exception {
         ObjectMapper objectMapper=new ObjectMapper();
-        String payload= objectMapper.writeValueAsString(lotteDto);
+        String payload= objectMapper.writeValueAsString(userDto);
         Response response= UsersMethodAction.PostUser(UniversalHeader.getHeader(),payload);
         SoftAssert softAssert=new SoftAssert();
         JSONObject jsonObject2=new JSONObject(response.getBody());
